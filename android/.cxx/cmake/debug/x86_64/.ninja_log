@@ -1,0 +1,5 @@
+# ninja log v5
+1	93	653255380	CMakeFiles/native_add.dir/C_/Users/dptem/native_add/ios/Classes/native_add.cpp.o	b675131cbff2961c
+93	183	653255380	C:/Users/dptem/native_add/example/build/native_add/intermediates/cmake/debug/obj/x86_64/libnative_add.so	98106f791dbd232c
+2	118	653256179	CMakeFiles/native_add.dir/C_/Users/dptem/native_add/ios/Classes/native_add.cpp.o	b675131cbff2961c
+118	213	653256180	C:/Users/dptem/native_add/example/build/native_add/intermediates/cmake/debug/obj/x86_64/libnative_add.so	98106f791dbd232c
