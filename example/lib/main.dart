@@ -56,7 +56,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           //child: Text('Running on: $_platformVersion\n'),
-          child: Text('1+2==${double_multiply(10,0.1)}')
+          child: Text('1+2==${nativeAdd(2.5,2.0)}')
         ),
       ),
     );

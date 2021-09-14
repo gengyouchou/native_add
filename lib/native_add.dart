@@ -1,19 +1,26 @@
 
 import 'dart:async';
+import 'dart:typed_data';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'dart:ffi'; // For FFI
 import 'dart:io'; // For Platform.isX
 
+
 final DynamicLibrary nativeAddLib = Platform.isAndroid
     ? DynamicLibrary.open("libnative_add.so")
     : DynamicLibrary.process();
 
-final double Function(double x, double y) nativeAdd =
+typedef hello_world_func = Double Function(Double,Double);
+
+final double Function(double,double) nativeAdd =
   nativeAddLib
-    .lookup<NativeFunction<double Function(double, double)>>('double_multiply')
-    .asFunction<double>();
+    .lookup<NativeFunction<hello_world_func>>('double_multiply')
+    .asFunction();
+
+    
 
 
 
